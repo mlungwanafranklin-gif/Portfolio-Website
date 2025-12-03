@@ -155,6 +155,36 @@ span {
   transform: scale(1.05);
 }
 
+.download {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+}
+
+.download .arrow {
+  transition: transform 0.2s ease;
+}
+
+.download:hover .arrow {
+  transform: translateX(4px);
+}
+
+.download {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+}
+
+.download .arrow {
+  transition: transform 0.2s ease;
+}
+
+.download:hover .arrow {
+  transform: translateY(4px);
+}
+
 
 /* SOCIAL ICONS */
 
@@ -260,4 +290,5 @@ span {
     font-size: 2.8rem;
   }
 }
+
 
