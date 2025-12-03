@@ -247,6 +247,76 @@ span {
              uncover 20s steps(1) infinite; /* reveal new word instantly */
 }
 
+/* ----------  section wrapper  ---------- */
+.coding-illustration {
+    padding: 8rem 9%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----------  content box  ---------- */
+.coding-illustration-img {
+    max-width: 900px;
+    text-align: center;
+}
+
+/* ----------  heading with animated underscore  ---------- */
+.coding-illustration-img h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.coding-illustration-img h1 span {
+    display: block;
+    width: 0;
+    height: 4px;
+    background: #ff5733;
+    margin: 0.5rem auto 0;
+    animation: growLine 0.8s ease forwards;
+}
+
+/* ----------  paragraph  ---------- */
+.coding-illustration-img p {
+    font-size: 1.8rem;
+    color: #555;
+    margin-bottom: 3rem;
+    line-height: 1.6;
+}
+
+/* ----------  image & caption  ---------- */
+.coding-illustration-img figure img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.coding-illustration-img figure img:hover {
+    transform: scale(1.02);
+}
+
+.coding-illustration-img figcaption {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    color: #777;
+}
+
+.coding-illustration-img figcaption a {
+    color: #ff5733;
+    text-decoration: none;
+}
+
+.coding-illustration-img figcaption a:hover {
+    text-decoration: underline;
+}
+
+
 /* blink the bar */
 @keyframes cursor {
   0%, 100% { border-left-color: #333; }
@@ -261,6 +331,7 @@ span {
   75.001%  { width: 100%; }   /* hide again */
   100%     { width: 100%; }
 }
+
 /* CURSOR BLINK */
 @keyframes cursor {
   0% {
@@ -273,6 +344,11 @@ span {
     border-left-color: #333;
   }
 }
+
+@keyframes growLine {
+    to { width: 100%; }
+}
+
 
 /* WORD CHANGING */
 @keyframes words {
@@ -299,6 +375,11 @@ span {
   .home-content h3 {
     font-size: 2.8rem;
   }
+}
+
+@media (max-width: 600px) {
+    .coding-illustration-img h1 { font-size: 3rem; }
+    .coding-illustration-img p  { font-size: 1.6rem; }
 }
 
 
