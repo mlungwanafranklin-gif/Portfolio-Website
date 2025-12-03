@@ -28,7 +28,7 @@
 
     <section class="home">
         <div class="home-img">
-            <img src="WhatsApp Image 2025-11-29 at 09.11.10_a4732090.jpg" alt="Profile Picture">
+            <img src="https://github.com/mlungwanafranklin-gif/Portfolio-Website/blob/main/Portfolio/WhatsApp%20Image%202025-11-29%20at%2009.11.10_a4732090.jpg" alt="Profile Picture">
         </div>
 
         <div class="home-content">
@@ -54,5 +54,6 @@
     </section>
 
 </body>
+
 
 </html>
