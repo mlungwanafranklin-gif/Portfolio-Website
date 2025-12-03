@@ -262,8 +262,6 @@ span {
   0%, 20% {
     content: "Web Developer";
   }
- 
-  }
   75%, 100% {
     content: "Fullstack Developer";
   }
@@ -289,6 +287,7 @@ span {
     font-size: 2.8rem;
   }
 }
+
 
 
 
