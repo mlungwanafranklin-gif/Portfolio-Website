@@ -45,10 +45,10 @@
             <a href="contact.html" class="btn">Hire Me</a>
 
             <div class="social-links">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/share/17g9DsrLsn/"><i class="fab fa-facebook"></i></a>
+                <a href="https://github.com/mlungwanafranklin-gif"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/franklin-mlungwana-80a342337?utm_source=share_via&utm_content=profile&utm_medium=member_android"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/_odessa_azion_?igsh=MWE3anF3dWVuMHEyag=="><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </section>
@@ -57,3 +57,4 @@
 
 
 </html>
+
