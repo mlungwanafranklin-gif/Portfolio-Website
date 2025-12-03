@@ -25,7 +25,8 @@ header {
   width: 100%;
   background: transparent;
   display: flex;
-  align-items: right;
+  align-items: center;   /* keeps items vertically centred */
+  justify-content: flex-end; /* <── pushes everything to the right */
   padding: 1rem 9%;
   position: fixed;
   top: 0;
@@ -288,6 +289,7 @@ span {
     font-size: 2.8rem;
   }
 }
+
 
 
 
