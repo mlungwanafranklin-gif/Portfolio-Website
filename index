@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franklin Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Franklin</a>
+
+        <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="services.html">Services</a>
+            <a href="experience.html">Experience</a>
+            <a href="education.html">Education</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-img">
+            <img src="WhatsApp Image 2025-11-29 at 09.11.10_a4732090.jpg" alt="Profile Picture">
+        </div>
+
+        <div class="home-content">
+            <h1>Hello, I'm <span>Franklin</span></h1>
+
+            <h3 class="typing-text">I'm an aspiring <span></span></h3>
+
+            <p>
+                A dedicated web developer passionate about creating clean, modern and
+                functional websites. I focus on both design and functionality to
+                build digital experiences that stand out.
+            </p>
+
+            <a href="contact.html" class="btn">Hire Me</a>
+
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
