@@ -318,12 +318,12 @@ span {
 
 .checkbox {
   display: flex;
-  flex-direction: column;
-  gap: 12px;
+  flex-wrap: wrap;
+  gap: 18px 30px; /* spacing: row gap then column gap */
   padding: 15px;
   border-radius: 12px;
   background: #f8f9fa;
-  max-width: 320px;
+  max-width: 600px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -339,7 +339,7 @@ span {
   position: relative;
 }
 
-/* Tick (checkmark) */
+/* Tick */
 .checkbox input[type="checkbox"]::before {
   content: "";
   position: absolute;
@@ -354,13 +354,13 @@ span {
   transition: 0.15s ease;
 }
 
-/* When checked */
+/* Checked state */
 .checkbox input[type="checkbox"]:checked::before {
   opacity: 1;
   transform: scale(1);
 }
 
-/* Label text */
+/* Label style */
 .checkbox label {
   display: flex;
   align-items: center;
@@ -370,11 +370,10 @@ span {
   user-select: none;
 }
 
-/* Hover effect */
+/* Hover */
 .checkbox label:hover input[type="checkbox"] {
   border-color: #3a86ff;
 }
-
 
 
 /* blink the bar */
@@ -441,6 +440,7 @@ span {
     .coding-illustration-img h1 { font-size: 3rem; }
     .coding-illustration-img p  { font-size: 1.6rem; }
 }
+
 
 
 
