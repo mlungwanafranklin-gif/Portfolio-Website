@@ -114,6 +114,14 @@ span {
   line-height: 1.6;
 }
 
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
 /* BUTTON */
 
 .btn {
@@ -381,6 +389,7 @@ span {
     .coding-illustration-img h1 { font-size: 3rem; }
     .coding-illustration-img p  { font-size: 1.6rem; }
 }
+
 
 
 
