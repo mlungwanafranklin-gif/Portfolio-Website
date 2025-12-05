@@ -27,37 +27,49 @@
     <section>
         <h1 style: position="center">Contact Me</h1>
         <p>Ready to bring something new to life? Chat with me and get onboard in 5 minutes—collabs & custom websites are my favorite challenges</p>
-   <form action="#" method="POST">
-  <label for="firstName">First Name *</label>
-  <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+  <div>
+  <form action="">
+    <!-- FIRST NAME -->
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
 
-  <label for="lastName">Last Name *</label>
-  <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+    <!-- LAST NAME -->
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
 
-  <label for="email">Email Address *</label>
-  <input type="email" id="email" name="email" placeholder="janedoe@gmail.com" required>
+    <!-- EMAIL -->
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" placeholder="janedoe@gmail.com" required>
 
-  <label for="phone-number">Phone Number *</label>
-  <input type="tel" id="phone-number" name="phone-number"
-         placeholder="+27 81 893 9999"
-         pattern="\+27\s?\d{2}\s?\d{3}\s?\d{4}"
-         title="e.g. +27 81 893 9999" required>
+    <!-- PHONE -->
+    <label for="phone-number">Phone Number:</label>
+    <input type="tel" id="phone-number" name="phone-number"
+           placeholder="+27 81 893 9999"
+           pattern="\+27\s?\d{2}\s?\d{3}\s?\d{4}" required>
 
-  <label for="message">Message *</label>
-  <textarea id="message" name="message" placeholder="Leave a message..." rows="4" ></textarea>
+    <!-- MESSAGE -->
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" placeholder="Leave a message..." rows="4" required></textarea>
 
-  <fieldset>
-    <legend>Services (pick any)</legend>
-    <label><input type="checkbox" name="services" value="web_design"> Web Design</label>
-    <label><input type="checkbox" name="services" value="video_editing"> Video Editing</label>
-    <label><input type="checkbox" name="services" value="consultation"> Business Consultation</label>
-    <label><input type="checkbox" name="services" value="social_media"> Social Media Management</label>
-    <label><input type="checkbox" name="services" value="other"> Other</label>
-  </fieldset>
+    <!-- SERVICES – checkboxes side-by-side -->
+    <label>Services:</label>
+    <div class="checkbox-row">
+      <label><input type="checkbox" name="services" value="web_design"> Web Design</label>
+      <label><input type="checkbox" name="services" value="video_editing"> Video Editing</label>
+      <label><input type="checkbox" name="services" value="consultation"> Business Consultation</label>
+      <label><input type="checkbox" name="services" value="social_media"> Social Media Management</label>
+      <label><input type="checkbox" name="services" value="other"> Other</label>
+    </div>
 
-  <button type="submit" class="btn">Submit</button>
-</form>
+    <button type="submit" class="btn">Submit</button>
+  </form>
+</div>
 
+<!-- keeps them horizontal & wraps on small screens -->
+<style>
+  .checkbox-row{display:flex;flex-wrap:wrap;gap:1.2rem}
+  .checkbox-row label{display:flex;align-items:center;gap:.3rem;cursor:pointer}
+</style>
         <ul>
             <li>Email: <a href="mailto: mlungwanafranklin@gmail.com">mlungwanafranklin@gmail.com</a></li>
             <li><a href="https://www.instagram.com/_odessa_azion_?igsh=MWE3anF3dWVuMHEyag==">Instagram: @_odessa_azion_</a></li>
@@ -68,6 +80,7 @@
 </body>
 
 </html>
+
 
 
 
