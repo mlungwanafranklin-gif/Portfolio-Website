@@ -89,9 +89,35 @@ section {
 
 .home {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 5rem;
+  min-height: 100vh;
+}
+
+.home-left {
+  flex: 1;                  /* take 50% width */
+  background-color: #333;   /* dark gray */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.home-left img {
+  width: 30vw;               /* fits nicely inside left side */
+  border-radius: 8px;
+  box-shadow: 0 0 25px #aaa;
+  transition: 0.3s;
+}
+
+.home-left img:hover {
+  transform: scale(1.05);
+}
+
+.home-right {
+  flex: 1;                  /* take remaining 50% */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 4rem;
+  background-color: #fafafa; /* keeps right side light */
 }
 
 .home-img img {
@@ -549,6 +575,7 @@ span {
   flex-direction: column;
   justify-content: center;
 }
+
 
 
 
