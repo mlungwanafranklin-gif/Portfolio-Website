@@ -526,31 +526,7 @@ span {
 @media (max-width: 600px) {
     .coding-illustration-img h1 { font-size: 3rem; }
     .coding-illustration-img p  { font-size: 1.6rem; }
-}
-
-/* 1.  make the image column grey */
-.home-img {
-  background: #444;          /* darker grey */
-  padding: 2rem;             /* keep some air around the pic */
-  border-radius: 8px;        /* optional, softens edges */
-}
-
-/* 2.  keep text column white (already white from body) */
-.home-content { background: transparent; }
-
-/* 3.  mobile: remove grey when stacked */
-@media (max-width: 900px) {
-  .home-img { background: none; }
-}
-
-/* make the grey block full-height on wide screens */
-.home-img {
-  align-self: stretch;   /* fill vertical space */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
+}  
 
 
 
