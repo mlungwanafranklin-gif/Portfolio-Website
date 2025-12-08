@@ -542,6 +542,15 @@ span {
   .home-img { background: none; }
 }
 
+/* make the grey block full-height on wide screens */
+.home-img {
+  align-self: stretch;   /* fill vertical space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
 
 
 
