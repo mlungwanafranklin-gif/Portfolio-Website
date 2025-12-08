@@ -542,6 +542,21 @@ span {
   }
 }
 
+/* -------------------------------------------------- */
+/*  split-background – grey left / white right        */
+/* -------------------------------------------------- */
+.home {
+  /* paint the split behind the flex children */
+  background: linear-gradient(to right, #888 0 50%, #fff 50% 100%);
+  min-height: 100vh; /* make sure the gradient fills the viewport */
+}
+
+/* on phones the columns stack – keep it plain white */
+@media (max-width: 900px) {
+  .home { background: #fff; }
+}
+
+
 
 
 
