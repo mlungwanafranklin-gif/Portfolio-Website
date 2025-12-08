@@ -35,6 +35,19 @@ header {
   transition: 0.3s;
 }
 
+/* attach this stylesheet to a HTML file that contains <span id="name">Franklin</span> */
+
+@keyframes fontSwap {
+  0%      { font-family: Georgia, serif; }
+  33.33%  { font-family: Helvetica, sans-serif; }
+  66.66%  { font-family: "Courier New", monospace; }
+  100%    { font-family: Georgia, serif; }
+}
+
+#name {
+  animation: fontSwap 12s infinite;
+}
+
 .logo {
   font-size: 3rem;
   font-weight: 800;
@@ -513,6 +526,7 @@ span {
     .coding-illustration-img h1 { font-size: 3rem; }
     .coding-illustration-img p  { font-size: 1.6rem; }
 }
+
 
 
 
