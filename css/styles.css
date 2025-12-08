@@ -527,6 +527,22 @@ span {
     .coding-illustration-img p  { font-size: 1.6rem; }
 }
 
+<--BACKGROUND COLOR CHANGE!-->
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+  background: linear-gradient(to right, #888 0%, #888 50%, #ffffff 50%, #ffffff 100%);
+}
+
+@media (max-width: 900px) {
+  .home {
+    background: #ffffff; /* single colour when stacked */
+  }
+}
+
+
 
 
 
