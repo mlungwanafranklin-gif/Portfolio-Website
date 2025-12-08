@@ -527,47 +527,20 @@ span {
     .coding-illustration-img p  { font-size: 1.6rem; }
 }
 
-<--BACKGROUND COLOR CHANGE!-->
-.home {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 5rem;
-  background: linear-gradient(to right, #888 0%, #888 50%, #ffffff 50%, #ffffff 100%);
+/* 1.  make the image column grey */
+.home-img {
+  background: #444;          /* darker grey */
+  padding: 2rem;             /* keep some air around the pic */
+  border-radius: 8px;        /* optional, softens edges */
 }
 
+/* 2.  keep text column white (already white from body) */
+.home-content { background: transparent; }
+
+/* 3.  mobile: remove grey when stacked */
 @media (max-width: 900px) {
-  .home {
-    background: #ffffff; /* single colour when stacked */
-  }
+  .home-img { background: none; }
 }
-
-/* -------------------------------------------------- */
-/*  split-background – grey left / white right        */
-/* -------------------------------------------------- */
-.home {
-  /* paint the split behind the flex children */
-  background: linear-gradient(to right, #888 0 50%, #fff 50% 100%);
-  min-height: 100vh; /* make sure the gradient fills the viewport */
-}
-
-/* on phones the columns stack – keep it plain white */
-@media (max-width: 900px) {
-  .home { background: #fff; }
-}
-
-fieldset {
-  border: 2px solid #ccc;
-  border-radius: 8px;
-  padding: 1rem;
-  margin-bottom: 1rem;
-}
-
-legend {
-  font-weight: bold;
-  padding: 0 0.5rem;
-}
-
 
 
 
