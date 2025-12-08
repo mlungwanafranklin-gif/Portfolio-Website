@@ -63,12 +63,6 @@
            pattern="\+27\s?\d{2}\s?\d{3}\s?\d{4}" required>
     </div>
 
-    <div class="text-area">
-        <!-- MESSAGE -->
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" placeholder="Leave a message..." rows="4" optional></textarea>
-    </div>
-
     <div>
         <!-- SERVICES – checkboxes side-by-side -->
     <label>Services:</label>
@@ -79,7 +73,18 @@
       <label><input type="checkbox" name="services" value="social_media"> Social Media Management</label>
       <label><input type="checkbox" name="services" value="other"> Other</label>
     </div>
- </fieldset>   
+ </fieldset> 
+
+<div>
+    <fieldset>
+        <legend>Describe it, we'll give it life</legend>
+       <div class="text-area">
+        <!-- MESSAGE -->
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Leave a message..." rows="4" optional></textarea>
+    </fieldset>
+</div>
+</div>
 </div>
 
     <button type="submit" class="btn">Submit</button>
@@ -119,6 +124,7 @@
 </body>
 
 </html>
+
 
 
 
