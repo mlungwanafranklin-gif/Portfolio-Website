@@ -111,6 +111,22 @@ section {
   line-height: 1.2;
 }
 
+/* side-by-side picture + title */
+.home-img {
+  display: flex;
+  align-items: center;   /* vertical centre */
+  gap: 2rem;             /* space between pic and text */
+  background: #444;      /* your existing grey block */
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+#title h1 {
+  margin: 0;             /* remove default margin */
+  font-size: 3rem;       /* tweak size if needed */
+  color: #fff;           /* stands out on grey */
+}
+
 span {
   color: #ff5733;
 }
@@ -526,3 +542,4 @@ span {
     .coding-illustration-img h1 { font-size: 3rem; }
     .coding-illustration-img p  { font-size: 1.6rem; }
 }
+
