@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400 ;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
   margin: 0;
@@ -33,19 +33,6 @@ header {
   left: 0;
   z-index: 100;
   transition: 0.3s;
-}
-
-/* attach this stylesheet to a HTML file that contains <span id="name">Franklin</span> */
-
-@keyframes fontSwap {
-  0%      { font-family: Georgia, serif; }
-  33.33%  { font-family: Helvetica, sans-serif; }
-  66.66%  { font-family: "Courier New", monospace; }
-  100%    { font-family: Georgia, serif; }
-}
-
-#name {
-  animation: fontSwap 12s infinite;
 }
 
 .logo {
@@ -109,22 +96,6 @@ section {
   font-size: 6rem;
   font-weight: 700;
   line-height: 1.2;
-}
-
-/* side-by-side picture + title */
-.home-img {
-  display: flex;
-  align-items: center;   /* vertical centre */
-  gap: 2rem;             /* space between pic and text */
-  background: #444;      /* your existing grey block */
-  padding: 2rem;
-  border-radius: 8px;
-}
-
-#title h1 {
-  margin: 0;             /* remove default margin */
-  font-size: 3rem;       /* tweak size if needed */
-  color: #fff;           /* stands out on grey */
 }
 
 span {
@@ -259,7 +230,7 @@ span {
 
 .typing-text span::before {
   content: "Web Developer";
-  animation: words 10s infinite;
+  animation: words 20s infinite;
 }
 
 /* ---------- cursor/mask ---------- */
@@ -273,7 +244,7 @@ span {
   background: #fafafa;
   border-left: 3px solid #333;
   animation: cursor 0.6s infinite,
-             uncover 10s steps(1) infinite; /* reveal new word instantly */
+             uncover 20s steps(1) infinite; /* reveal new word instantly */
 }
 
 /* ----------  section wrapper  ---------- */
@@ -443,41 +414,6 @@ span {
   transform: scale(1.05);
 }
 
-.text-area {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1rem; /* spacing below the field */
-  width: 100%; /* full width of container */
-  max-width: 500px; /* doesn't stretch too much on large screens */
-}
-
-.text-area label {
-  margin-bottom: 0.5rem; /* space between label and textarea */
-  font-weight: 500;
-  font-size: 1rem;
-}
-
-.text-area textarea {
-  padding: 0.75rem; /* comfy padding inside the box */
-  font-size: 1rem; /* readable text size */
-  border: 1px solid #ccc; /* subtle border */
-  border-radius: 8px; /* rounded corners */
-  resize: vertical; /* user can only resize vertically */
-  min-height: 100px; /* not too small */
-  max-height: 200px; /* not too huge */
-  width: 100%; /* fill the container */
-  box-sizing: border-box; /* includes padding in width */
-  font-family: inherit; /* keeps font consistent */
-  transition: border 0.2s, box-shadow 0.2s;
-}
-
-.text-area textarea:focus {
-  border-color: #1DB954; /* accent color on focus */
-  box-shadow: 0 0 5px rgba(29, 185, 84, 0.5);
-  outline: none;
-}
-
-
 /* blink the bar */
 @keyframes cursor {
   0%, 100% { border-left-color: #333; }
@@ -542,4 +478,16 @@ span {
     .coding-illustration-img h1 { font-size: 3rem; }
     .coding-illustration-img p  { font-size: 1.6rem; }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
