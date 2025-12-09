@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400 ;700&display=swap');
 
 * {
   margin: 0;
@@ -433,7 +432,7 @@ span {
   flex-direction: column;
   margin-bottom: 1rem; /* spacing below the field */
   width: 100%; /* full width of container */
-  max-width: 500px; /* doesn’t stretch too much on large screens */
+  max-width: 500px; /* doesn't stretch too much on large screens */
 }
 
 .text-area label {
@@ -526,11 +525,4 @@ span {
 @media (max-width: 600px) {
     .coding-illustration-img h1 { font-size: 3rem; }
     .coding-illustration-img p  { font-size: 1.6rem; }
-}  
-
-
-
-
-
-
-
+}
