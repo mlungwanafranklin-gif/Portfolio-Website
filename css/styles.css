@@ -188,6 +188,22 @@ span {
   transform: translateY(4px);
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.grid section {
+  text-align: center;
+}
+
+.grid img {
+  max-width: 100%;
+  height: auto;
+}
+
+
 
 /* SOCIAL ICONS */
 
@@ -426,6 +442,13 @@ span {
   font-size: 14px;
 }
 
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 
 /* blink the bar */
 @keyframes cursor {
@@ -533,6 +556,7 @@ textarea{resize:vertical}
 @media(max-width:768px){
   .two-col{flex-direction:column}
 }
+
 
 
 
