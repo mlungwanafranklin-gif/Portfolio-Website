@@ -414,6 +414,19 @@ span {
   transform: scale(1.05);
 }
 
+::-webkit-input-placeholder {
+  font-size: 14px;
+}
+
+:-ms-input-placeholder {
+  font-size: 14px;
+}
+
+::-ms-input-placeholder {
+  font-size: 14px;
+}
+
+
 /* blink the bar */
 @keyframes cursor {
   0%, 100% { border-left-color: #333; }
@@ -520,6 +533,7 @@ textarea{resize:vertical}
 @media(max-width:768px){
   .two-col{flex-direction:column}
 }
+
 
 
 
