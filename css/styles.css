@@ -188,6 +188,8 @@ span {
   transform: translateY(4px);
 }
 
+/* grids */
+
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -556,6 +558,7 @@ textarea{resize:vertical}
 @media(max-width:768px){
   .two-col{flex-direction:column}
 }
+
 
 
 
