@@ -204,27 +204,69 @@ span {
   transform: translateY(4px);
 }
 
-/* Page Layout */
-.page-title {
-    text-align: center;
-    margin: 2rem 0;
-    font-size: 2.5rem;
-    color: #333;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  justify-items: center;
 }
 
-/* Education Grid with Lines */
-.education-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0; /* Remove gap to connect lines */
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-    position: relative;
-    border: 2px solid #e0e0e0; /* Outer border */
+.grid section:last-child {
+  grid-column: 1 / -1;
+  justify-self: center;
 }
 
-/* Grid Lines */
+.grid section {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px; /* rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid section img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover effects */
+.grid section:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.grid section:hover img {
+  transform: scale(1.1);
+  filter: brightness(1.1); /* subtle lightening */
+}
+
+/* Optional: figcaption overlay on hover */
+.grid section figure {
+  margin: 0;
+  position: relative;
+}
+
+.grid section figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-style: italic;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.grid section:hover figcaption {
+  opacity: 1;
+}
+
 
 /* SOCIAL ICONS */
 
@@ -577,6 +619,7 @@ textarea{resize:vertical}
 @media(max-width:768px){
   .two-col{flex-direction:column}
 }
+
 
 
 
