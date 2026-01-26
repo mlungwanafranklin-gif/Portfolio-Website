@@ -130,14 +130,13 @@ span {
   line-height: 1.6;
 }
 
-/* BUTTON */
-
+/* BUTTON - Base style matching navbar */
 .btn {
   display: inline-block;
   padding: 1rem 2.8rem;
   font-size: 1.6rem;
-  font-weight: 600;
-  color: #fff;
+  font-weight: 500;
+  color: white;
   background: #333;
   border-radius: 4rem;
   letter-spacing: 0.2rem;
@@ -147,62 +146,51 @@ span {
   text-decoration: none;
 }
 
+/* Hover - Same as navbar active/hover color */
 .btn:hover {
-  background: #ff5733;
-  box-shadow: 0 0 25px #ff5733;
-  transform: scale(1.05);
-}
-
-.download-btn {
-  display: inline-block;
-  padding: 1rem 2.8rem;
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: #fff;
+  color: #ff5733;
   background: #333;
-  border-radius: 4rem;
-  letter-spacing: 0.2rem;
-  border: none;
-  cursor: pointer;
-  transition: 0.3s;
-  text-decoration: none;
-}
-
-.download-btn: hover {
-  background: #ff5733;
-  box-shadow: 0 0 25px #ff5733;
+  border-bottom: 3px solid #ff5733;
   transform: scale(1.05);
+  box-shadow: none;
 }
 
-.download {
+/* DOWNLOAD BUTTON - Same base style */
+.download-btn {
   display: inline-flex;
   align-items: center;
   gap: 6px;
+  padding: 1rem 2.8rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: white;
+  background: #333;
+  border-radius: 4rem;
+  letter-spacing: 0.2rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
   text-decoration: none;
 }
 
-.download .arrow {
+/* Hover - Same navbar reaction */
+.download-btn:hover {
+  color: #ff5733;
+  background: #333;
+  border-bottom: 3px solid #ff5733;
+  transform: scale(1.05);
+}
+
+/* Arrow animation */
+.download-btn .arrow {
   transition: transform 0.2s ease;
 }
 
-.download:hover .arrow {
+.download-btn:hover .arrow {
   transform: translateX(4px);
 }
 
-.download {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  text-decoration: none;
-}
-
-.download .arrow {
-  transition: transform 0.2s ease;
-}
-
-.download:hover .arrow {
-  transform: translateY(4px);
-}
+/* Remove duplicate .download classes - merged above */
 
 .grid {
   display: grid;
@@ -619,6 +607,7 @@ textarea{resize:vertical}
 @media(max-width:768px){
   .two-col{flex-direction:column}
 }
+
 
 
 
