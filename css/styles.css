@@ -49,16 +49,32 @@ header {
   transform: scale(1.1);
 }
 
+/* NAVBAR CONTAINER - Aligned right */
+.navbar {
+  display: flex;
+  justify-content: flex-end; /* Pushes links to the right */
+  align-items: center;
+  background-color: #333;
+  padding: 1rem 4rem;
+}
+
+/* NAVBAR LINKS */
 .navbar a {
-  text-decoration: none;
   font-size: 1.8rem;
-  color: #333;
-  margin-left: 3rem;
+  color: white;
   font-weight: 500;
-  border-bottom: 3px solid transparent;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  margin-left: 2rem; /* Space between links */
   transition: 0.3s;
 }
 
+/* Remove margin from first link */
+.navbar a:first-child {
+  margin-left: 0;
+}
+
+/* Hover and active states */
 .navbar a:hover,
 .navbar a.active {
   color: #ff5733;
@@ -561,6 +577,7 @@ textarea{resize:vertical}
 @media(max-width:768px){
   .two-col{flex-direction:column}
 }
+
 
 
 
