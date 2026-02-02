@@ -38,62 +38,72 @@
    <b> Ready to bring something new to life? Chat with me and get onboard in 5 minutes—collabs &amp; custom websites are my favorite challenges</b>
   </p>
 
-  <div class="two-col">
-    <!-- LEFT: FORM -->
-    <div class="form-col">
-      <form action="" aria-label="Contact form" class="contact-form">
-        <!-- handled by contact.js -->
+ <div class="two-col">
+  <!-- LEFT: FORM -->
+  <div class="form-col">
+    <form action="" aria-label="Contact form" class="contact-form">
 
-        <fieldset class="field-set">
-          <legend>Personal Information</legend>
+      <fieldset class="field-set">
+        <legend>Personal Information</legend>
 
-          <div class="input-pair">
-            <div class="field">
-              <label for="firstName">*</label>
-              <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
-            </div>
-            <div class="field">
-              <label for="lastName">*</label>
-              <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+        <div class="input-pair">
+          <div class="field">
+            <div class="input-container">
+              <input type="text" id="firstName" name="firstName" required placeholder=" ">
+              <label for="firstName">First Name*</label>
             </div>
           </div>
 
           <div class="field">
-            <label for="email">*</label>
-            <input type="email" id="email" name="email" placeholder="janedoe@gmail.com"
-                   required minlength="6" maxlength="50">
-          </div>
-
-          <div class="field">
-            <label for="phone-number">*</label>
-            <input type="tel" id="phone-number" name="phone-number"
-                   placeholder="+27 81 893 9999"
-                   pattern="\+27\s?\d{2}\s?\d{3}\s?\d{4}" required>
-          </div>
-
-          <div class="field">
-            <span class="label-like">Services:</span>
-            <div class="checkbox-row">
-              <label><input type="checkbox" name="services" value="web_design"> Web Design</label>
-              <label><input type="checkbox" name="services" value="video_editing"> Video Editing</label>
-              <label><input type="checkbox" name="services" value="consultation"> Business Consultation</label>
-              <label><input type="checkbox" name="services" value="social_media"> Social Media Management</label>
-              <label><input type="checkbox" name="services" value="other"> Other</label>
+            <div class="input-container">
+              <input type="text" id="lastName" name="lastName" required placeholder=" ">
+              <label for="lastName">Last Name*</label>
             </div>
           </div>
-        </fieldset>
+        </div>
 
-        <fieldset class="field-set">
-          <legend>Describe it, we'll give it life</legend>
-          <div class="field">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" placeholder="Leave a message..." rows="4"></textarea>
+        <div class="field">
+          <div class="input-container">
+            <input type="email" id="email" name="email" required placeholder=" ">
+            <label for="email">Email*</label>
           </div>
-        </fieldset>
+        </div>
 
-        <button type="submit" class="btn">Send me a message</button>
-      </form>
-    </div>
+        <div class="field">
+          <div class="input-container">
+            <input type="tel" id="phone-number" name="phone-number" required placeholder=" ">
+            <label for="phone-number">Telephone Number*</label>
+          </div>
+        </div>
+
+        <div class="field">
+          <span class="label-like">Services:</span>
+          <div class="checkbox-row">
+            <label><input type="checkbox" name="services" value="web_design"> Web Design</label>
+            <label><input type="checkbox" name="services" value="video_editing"> Video Editing</label>
+            <label><input type="checkbox" name="services" value="consultation"> Business Consultation</label>
+            <label><input type="checkbox" name="services" value="social_media"> Social Media Management</label>
+            <label><input type="checkbox" name="services" value="other"> Other</label>
+          </div>
+        </div>
+
+      </fieldset>
+
+      <fieldset class="field-set">
+        <legend>Describe it, we'll give it life</legend>
+        <div class="field">
+          <div class="input-container">
+            <textarea id="message" name="message" rows="4" placeholder=" "></textarea>
+            <label for="message">Message</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <button type="submit" class="btn">Send me a message</button>
+    </form>
+  </div>
+</div>
+
 
     <!-- RIGHT: INFO + BOOKING -->
     <div class="info-col">
@@ -132,6 +142,7 @@
 </section>
 </body>
 </html>
+
 
 
 
