@@ -296,38 +296,44 @@ textarea {
   margin-bottom: 2rem;
 }
 
+/* Textarea itself */
 .input-container textarea {
   width: 100%;
   min-height: 140px;
-  padding: 1.2rem 1rem;
+  padding: 1.4rem 1rem;
   font-size: 1.6rem;
   border: 1px solid #bbb;
   border-radius: 6px;
   resize: vertical;
-  background: none;
+  background: transparent;
   outline: none;
 }
 
-/* The floating label */
+/* Floating label */
 .input-container label {
   position: absolute;
-  top: 1.2rem;
+  top: 1.4rem;
   left: 1rem;
   font-size: 1.6rem;
   color: #999;
   pointer-events: none;
   transition: all 0.2s ease;
-  background: #fafafa;
+  background: #fafafa; /* matches body */
   padding: 0 0.4rem;
 }
 
-/* When focused OR has content */
+/* When focused or has text */
 .input-container textarea:focus + label,
 .input-container textarea:not(:placeholder-shown) + label {
   top: -0.8rem;
   left: 0.8rem;
   font-size: 1.2rem;
   color: #ff5733;
+}
+
+/* Optional: focus border */
+.input-container textarea:focus {
+  border-color: #ff5733;
 }
 
 
@@ -362,6 +368,7 @@ textarea {
     grid-template-columns: 1fr;
   }
 }
+
 
 
 
