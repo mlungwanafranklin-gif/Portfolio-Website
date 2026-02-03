@@ -1,3 +1,7 @@
+/* =========================================================
+   1. IMPORTS & RESET
+   ========================================================= */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
@@ -13,25 +17,39 @@ html {
 
 body {
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   background-color: #fafafa;
   color: #333;
   font-size: 1.6rem;
 }
 
-/* ============================================
-   TOP CONTACT BAR (New Addition)
-   ============================================ */
+
+/* =========================================================
+   2. GLOBAL ELEMENTS
+   ========================================================= */
+
+span {
+  color: #ff5733;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* =========================================================
+   3. TOP INFO BAR
+   ========================================================= */
 
 .et-info-header {
-  width: 100%;
-  background-color: #333;          /* Matches your navbar */
-  padding: 1rem 9%;
-  font-size: 1.4rem;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 101;                    /* Above main header */
+  width: 100%;
+  padding: 1rem 9%;
+  background-color: #333;
+  font-size: 1.4rem;
+  z-index: 101;
 }
 
 .et-info-header > div {
@@ -42,97 +60,54 @@ body {
   align-items: center;
 }
 
-/* Contact info container */
-.et-info-header > div > div:first-child {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-
-/* Phone styling */
-#et-info-phone a {
-  color: #fff;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.8rem;
-  transition: 0.3s;
-}
-
-#et-info-phone a:hover {
-  color: #ff5733;                  /* Your accent color */
-}
-
-/* Email styling */
+#et-info-phone a,
 #et-info-email {
   color: #fff;
-  text-decoration: none;
   display: inline-flex;
   align-items: center;
   gap: 0.8rem;
   transition: 0.3s;
 }
 
+#et-info-phone::after {
+  content: "|";
+  margin-left: 2rem;
+  color: rgba(255,255,255,0.3);
+}
+
+#et-info-phone a:hover,
 #et-info-email:hover {
   color: #ff5733;
 }
 
-/* Separator */
-#et-info-phone::after {
-  content: "|";
-  margin-left: 2rem;
-  color: rgba(255, 255, 255, 0.3);
-}
 
-/* Secondary menu area */
-#et-secondary-menu {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-
-/* ============================================
-   MAIN HEADER (Adjusted for top bar)
-   ============================================ */
+/* =========================================================
+   4. HEADER & NAVBAR
+   ========================================================= */
 
 header {
-  width: 100%;
-  background: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 1rem 9%;
   position: fixed;
-  top: 5rem;                         /* Push down below contact bar */
+  top: 5rem;
   left: 0;
+  width: 100%;
+  padding: 1rem 9%;
   z-index: 100;
-  transition: 0.3s;
 }
-
-/* ============================================
-   NAVBAR
-   ============================================ */
 
 .navbar {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: #333;
+  background: #333;
   padding: 1rem 4rem;
 }
 
 .navbar a {
   font-size: 1.8rem;
-  color: white;
-  font-weight: 500;
-  text-decoration: none;
+  color: #fff;
   padding: 0.5rem 1.5rem;
   margin-left: 2rem;
   transition: 0.3s;
-}
-
-.navbar a:first-child {
-  margin-left: 0;
 }
 
 .navbar a:hover,
@@ -141,18 +116,20 @@ header {
   border-bottom: 3px solid #ff5733;
 }
 
-/* ============================================
-   SECTIONS (Adjusted for double header)
-   ============================================ */
+
+/* =========================================================
+   5. SECTIONS
+   ========================================================= */
 
 section {
   min-height: 100vh;
-  padding: 15rem 9% 5rem;            /* Increased top padding for two headers */
+  padding: 15rem 9% 5rem;
 }
 
-/* ============================================
-   HOME SECTION
-   ============================================ */
+
+/* =========================================================
+   6. HOME
+   ========================================================= */
 
 .home {
   display: flex;
@@ -175,199 +152,95 @@ section {
 .home-content h1 {
   font-size: 6rem;
   font-weight: 700;
-  line-height: 1.2;
-}
-
-span {
-  color: #ff5733;
 }
 
 .home-content h3 {
   font-size: 3.5rem;
-  font-weight: 700;
 }
 
 .home-content p {
   font-size: 1.8rem;
-  color: #555;
   margin: 2rem 0;
-  line-height: 1.6;
+  color: #555;
 }
 
-/* ============================================
-   BUTTONS
-   ============================================ */
 
-.btn {
-  display: inline-block;
-  padding: 1rem 2.8rem;
-  font-size: 1.6rem;
-  font-weight: 500;
-  color: white;
-  background: #333;
-  border-radius: 4rem;
-  letter-spacing: 0.2rem;
-  border: none;
-  cursor: pointer;
-  transition: 0.3s;
-  text-decoration: none;
-}
+/* =========================================================
+   7. BUTTONS
+   ========================================================= */
 
-.btn:hover {
-  color: #ff5733;
-  background: #333;
-  border-bottom: 3px solid #ff5733;
-  transform: scale(1.05);
-  box-shadow: none;
-}
-
-/* Download button */
-.download-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 1rem 2.8rem;
-  font-size: 1.6rem;
-  font-weight: 500;
-  color: white;
-  background: #333;
-  border-radius: 4rem;
-  letter-spacing: 0.2rem;
-  border: none;
-  cursor: pointer;
-  transition: 0.3s;
-  text-decoration: none;
-}
-
-.download-btn:hover {
-  color: #ff5733;
-  background: #333;
-  border-bottom: 3px solid #ff5733;
-  transform: scale(1.05);
-}
-
-.download-btn .arrow {
-  transition: transform 0.2s ease;
-}
-
-.download-btn:hover .arrow {
-  transform: translateX(4px);
-}
-
-/* Arrow button */
+.btn,
+.download-btn,
 .btn-arrow {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   padding: 1rem 2.8rem;
   font-size: 1.6rem;
-  font-weight: 500;
-  color: white;
+  color: #fff;
   background: #333;
   border-radius: 4rem;
-  letter-spacing: 0.2rem;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  cursor: pointer;
   border: none;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.greater-than {
-  display: inline-block;
-  transition: all 0.3s ease;
-  font-weight: bold;
-}
-
+.btn:hover,
+.download-btn:hover,
 .btn-arrow:hover {
   color: #ff5733;
-  background: #333;
   border-bottom: 3px solid #ff5733;
   transform: scale(1.05);
 }
 
+.greater-than {
+  transition: 0.3s;
+}
+
 .btn-arrow:hover .greater-than {
   transform: translateX(8px);
-  color: #ff5733;
 }
 
-.btn-arrow:active .greater-than {
-  transform: translateX(12px);
-  transition: transform 0.1s ease;
-}
 
-/* ============================================
-   GRID
-   ============================================ */
+/* =========================================================
+   8. GRID
+   ========================================================= */
 
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
-  justify-items: center;
-}
-
-.grid section:last-child {
-  grid-column: 1 / -1;
-  justify-self: center;
 }
 
 .grid section {
-  text-align: center;
-  position: relative;
+  border-radius: 10px;
   overflow: hidden;
-  border-radius: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.grid section img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 10px;
-  transition: transform 0.3s ease, filter 0.3s ease;
+  transition: 0.3s;
 }
 
 .grid section:hover {
   transform: scale(1.05);
   box-shadow: 0 15px 25px rgba(0,0,0,0.2);
-  cursor: pointer;
+}
+
+.grid img {
+  width: 100%;
+  transition: 0.3s;
 }
 
 .grid section:hover img {
   transform: scale(1.1);
-  filter: brightness(1.1);
 }
 
-.grid section figure {
-  margin: 0;
-  position: relative;
-}
 
-.grid section figcaption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 0.5rem;
-  background: rgba(0, 0, 0, 0.6);
-  color: #fff;
-  font-style: italic;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.grid section:hover figcaption {
-  opacity: 1;
-}
-
-/* ============================================
-   SOCIAL ICONS
-   ============================================ */
+/* =========================================================
+   9. SOCIAL LINKS
+   ========================================================= */
 
 .social-links {
-  margin-top: 3rem;
   display: flex;
   gap: 1.5rem;
+  margin-top: 3rem;
 }
 
 .social-links a {
@@ -378,8 +251,6 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #333;
-  font-size: 2rem;
   transition: 0.3s;
 }
 
@@ -387,391 +258,62 @@ span {
   background: #333;
   color: #fff;
   transform: scale(1.2);
-  box-shadow: 0 0 25px #333;
 }
 
-/* ============================================
-   TYPING EFFECT
-   ============================================ */
 
-.typing-text {
-  font-size: 3.2rem;
-  font-weight: 600;
-}
-
-.typing-text span {
-  position: relative;
-}
-
-.typing-text span::before {
-  content: "Web Developer";
-  animation: words 20s infinite;
-}
-
-.typing-text span::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -8px;
-  width: 100%;
-  height: 100%;
-  background: #fafafa;
-  border-left: 3px solid #333;
-  animation: cursor 0.6s infinite, uncover 20s steps(1) infinite;
-}
-
-/* ============================================
-   CODING ILLUSTRATION
-   ============================================ */
-
-.coding-illustration {
-  padding: 8rem 9%;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.coding-illustration-img {
-  max-width: 900px;
-  text-align: center;
-}
-
-.coding-illustration-img h1 {
-  font-size: 4rem;
-  font-weight: 700;
-  color: #333;
-  margin-bottom: 1.5rem;
-  position: relative;
-  display: inline-block;
-}
-
-.coding-illustration-img h1 span {
-  display: block;
-  width: 0;
-  height: 4px;
-  background: #ff5733;
-  margin: 0.5rem auto 0;
-  animation: growLine 0.8s ease forwards;
-}
-
-.coding-illustration-img p {
-  font-size: 1.8rem;
-  color: #555;
-  margin-bottom: 3rem;
-  line-height: 1.6;
-}
-
-.coding-illustration-img figure img {
-  width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.coding-illustration-img figure img:hover {
-  transform: scale(1.02);
-}
-
-.coding-illustration-img figcaption {
-  margin-top: 1rem;
-  font-size: 1.4rem;
-  color: #777;
-}
-
-.coding-illustration-img figcaption a {
-  color: #ff5733;
-  text-decoration: none;
-}
-
-.coding-illustration-img figcaption a:hover {
-  text-decoration: underline;
-}
-
-/* ============================================
-   CHECKBOX
-   ============================================ */
-
-.checkbox {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 18px 30px;
-  padding: 15px;
-  border-radius: 12px;
-  background: #f8f9fa;
-  max-width: 600px;
-  font-family: "Poppins", sans-serif;
-}
-
-.checkbox input[type="checkbox"] {
-  appearance: none;
-  width: 18px;
-  height: 18px;
-  border: 2px solid #555;
-  border-radius: 4px;
-  margin-right: 10px;
-  cursor: pointer;
-  position: relative;
-}
-
-.checkbox input[type="checkbox"]::before {
-  content: "";
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  top: 1px;
-  left: 1px;
-  background: #3a86ff;
-  border-radius: 3px;
-  opacity: 0;
-  transform: scale(0.7);
-  transition: 0.15s ease;
-}
-
-.checkbox input[type="checkbox"]:checked::before {
-  opacity: 1;
-  transform: scale(1);
-}
-
-.checkbox label {
-  display: flex;
-  align-items: center;
-  font-size: 15px;
-  color: #222;
-  cursor: pointer;
-  user-select: none;
-}
-
-.checkbox label:hover input[type="checkbox"] {
-  border-color: #3a86ff;
-}
-
-/* ============================================
-   GRID ITEMS
-   ============================================ */
-
-.item-1 { grid-row: 1 / 2; grid-column: 1 / 2; }
-.item-2 { grid-row: 1 / 2; grid-column: 2 / 3; }
-.item-3 { grid-row: 1 / 2; grid-column: 3 / 4; }
-.item-4 { grid-row: 2 / 3; grid-column: 1 / 2; }
-.item-5 { grid-row: 2 / 3; grid-column: 2 / 3; }
-
-.item {
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.items:hover {
-  background: #ff5733;
-  box-shadow: 0 0 25px #ff5733;
-  transform: scale(1.05);
-}
-
-/* ============================================
-   CONTACT SECTION
-   ============================================ */
-
-.contact-section {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-}
-
-.section-title, .section-tagline {
-  text-align: center;
-}
-
-.section-tagline {
-  margin-bottom: 2rem;
-}
-
-.two-col {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  align-items: flex-start;
-}
-
-.form-col {
-  flex: 1 1 320px;
-}
-
-.info-col {
-  flex: 1 1 280px;
-}
+/* =========================================================
+   10. FORMS
+   ========================================================= */
 
 .contact-form fieldset {
   border: 1px solid #ccc;
   padding: 1rem;
   margin-bottom: 1.5rem;
+  transition: 0.3s;
 }
 
-.contact-form legend {
-  font-weight: 600;
-  padding: 0 .5rem;
-}
-
-.field {
-  margin-bottom: 1rem;
-}
-
-.input-pair {
-  display: flex;
-  gap: 1rem;
-}
-
-.input-pair .field {
-  flex: 1;
+.contact-form fieldset:hover {
+  background: #333;
+  color: #ff5733;
 }
 
 label {
-  display: block;
-  margin-bottom: .25rem;
   font-weight: 500;
+  margin-bottom: 0.25rem;
+  display: block;
 }
 
-input[type=text],
-input[type=email],
-input[type=tel],
+input,
 textarea {
   width: 100%;
-  padding: .6rem .8rem;
+  padding: 0.6rem 0.8rem;
   border: 1px solid #bbb;
   border-radius: 4px;
-  font-size: 1rem;
 }
 
-textarea {
-  resize: vertical;
-}
 
-.checkbox-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.2rem;
-}
-
-.checkbox-row label {
-  display: flex;
-  align-items: center;
-  gap: .3rem;
-  cursor: pointer;
-}
-
-.appointment-box,
-.contact-box {
-  background: #f8f8f8;
-  padding: 1.5rem;
-  border-radius: 6px;
-  margin-bottom: 1.5rem;
-}
-
-.contact-box ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.contact-box li {
-  margin-bottom: .5rem;
-}
-
-.contact-box a {
-  color: #0077ff;
-  text-decoration: none;
-}
-
-.contact-box a:hover {
-  text-decoration: underline;
-}
-
-.emoji {
-  vertical-align: middle;
-  margin-left: .4rem;
-}
-
-/* ============================================
-   ANIMATIONS
-   ============================================ */
+/* =========================================================
+   11. ANIMATIONS
+   ========================================================= */
 
 @keyframes cursor {
-  0%, 100% { border-left-color: #333; }
-  50% { border-left-color: transparent; }
-}
-
-@keyframes uncover {
-  0%, 20% { width: 100%; }
-  20.001% { width: 0; }
-  75% { width: 0; }
-  75.001% { width: 100%; }
-  100% { width: 100%; }
+  50% { border-color: transparent; }
 }
 
 @keyframes words {
-  0%, 20% { content: "Web Developer"; }
-  75%, 100% { content: "Fullstack Developer"; }
+  0%,20% { content: "Web Developer"; }
+  75%,100% { content: "Fullstack Developer"; }
 }
 
-@keyframes growLine {
-  to { width: 100%; }
-}
 
-@keyframes slideDown {
-  from { transform: translateY(-100%); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
-}
-
-/* ============================================
-   RESPONSIVE
-   ============================================ */
+/* =========================================================
+   12. RESPONSIVE
+   ========================================================= */
 
 @media (max-width: 900px) {
   .home {
     flex-direction: column;
     text-align: center;
-  }
-
-  .home-img img {
-    width: 60vw;
-  }
-
-  .home-content h1 {
-    font-size: 4.5rem;
-  }
-
-  .home-content h3 {
-    font-size: 2.8rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .two-col {
-    flex-direction: column;
-  }
-  
-  .et-info-header > div {
-    flex-direction: column;
-    gap: 1rem;
-    text-align: center;
-  }
-  
-  .et-info-header > div > div:first-child {
-    flex-direction: column;
-    gap: 1rem;
-  }
-  
-  #et-info-phone::after {
-    display: none;
-  }
-  
-  header {
-    top: 8rem; /* Adjust for taller mobile contact bar */
-  }
-  
-  section {
-    padding: 18rem 9% 5rem;
   }
 }
 
@@ -779,80 +321,8 @@ textarea {
   .grid {
     grid-template-columns: 1fr;
   }
-  
-  .coding-illustration-img h1 {
-    font-size: 3rem;
-  }
-  
-  .coding-illustration-img p {
-    font-size: 1.6rem;
-  }
-  
-  .navbar {
-    padding: 1rem;
-  }
-  
-  .navbar a {
-    font-size: 1.4rem;
-    margin-left: 1rem;
-    padding: 0.5rem 1rem;
-  }
 }
 
-/* ============================================
-   PLACEHOLDER STYLES
-   ============================================ */
-
-::-webkit-input-placeholder,
-:-ms-input-placeholder,
-::-ms-input-placeholder {
-  font-size: 14px;
-}
-.field-set:
-.field-set:hover {
-  color:#ff5733;
-  background:#333;
-  transform:;
-  box-shadow:;
-
-
-.input-container {
-  position: relative;
-  margin-bottom: 20px;
-}
-
-.input-container input,
-.input-container textarea {
-  width: 100%;
-  padding: 12px 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background: none;
-}
-
-.input-container label {
-  position: absolute;
-  top: 12px;
-  left: 10px;
-  font-size: 16px;
-  color: #999;
-  pointer-events: none; /* clicks go to input */
-  transition: all 0.2s ease;
-  background: white; /* optional, hides overlap */
-  padding: 0 2px;
-}
-
-/* Float label when input is focused or has value */
-.input-container input:focus + label,
-.input-container input:not(:placeholder-shown) + label,
-.input-container textarea:focus + label,
-.input-container textarea:not(:placeholder-shown) + label {
-  top: -10px;
-  left: 8px;
-  font-size: 12px;
-  color: #333;
-}
 
 
 
