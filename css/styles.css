@@ -291,6 +291,46 @@ textarea {
   border-radius: 4px;
 }
 
+.input-container {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.input-container textarea {
+  width: 100%;
+  min-height: 140px;
+  padding: 1.2rem 1rem;
+  font-size: 1.6rem;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  resize: vertical;
+  background: none;
+  outline: none;
+}
+
+/* The floating label */
+.input-container label {
+  position: absolute;
+  top: 1.2rem;
+  left: 1rem;
+  font-size: 1.6rem;
+  color: #999;
+  pointer-events: none;
+  transition: all 0.2s ease;
+  background: #fafafa;
+  padding: 0 0.4rem;
+}
+
+/* When focused OR has content */
+.input-container textarea:focus + label,
+.input-container textarea:not(:placeholder-shown) + label {
+  top: -0.8rem;
+  left: 0.8rem;
+  font-size: 1.2rem;
+  color: #ff5733;
+}
+
+
 
 /* =========================================================
    11. ANIMATIONS
@@ -322,6 +362,7 @@ textarea {
     grid-template-columns: 1fr;
   }
 }
+
 
 
 
